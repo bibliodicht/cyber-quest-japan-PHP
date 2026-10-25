@@ -1,0 +1,16 @@
+{
+  "name": "cyber-quest-japan",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "CYBER QUEST JAPAN for PHP - 民間の無料サイバーセキュリティ学習ゲーム（デモ版・依存ゼロ構成）",
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node scripts/build.mjs && node scripts/single.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "serve": "node scripts/serve.mjs",
+    "test": "npm run build && node --test tests/*.test.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}
